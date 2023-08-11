@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-    
+    <main>
+        <section id="login">
+            <div id="imagem">
+
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <form action="dados.php" method="post">
+
+                    <label for="idemail">Email</label>
+                    <input type="email" name="email" id="idemail" placeholder="exemplo@exemplo.com" required><br>
+                    <label for="idsenha">Senha</label>
+                    <input type="password" name="senha" id="idsenha" minlength="8" maxlength="10" placeholder="8 digitos" required>
+                    <input type="submit" value="Logar">
+                    <input type="button" value="Esqueci a senha">
+
+                </form>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
