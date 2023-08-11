@@ -6,6 +6,8 @@
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-queries.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
     <main>
@@ -15,14 +17,26 @@
             </div>
             <div id="formulario">
                 <h1>Login</h1>
-                <form action="dados.php" method="post">
+                <p>Seja bem-vindo.</p>
+                <form action="dados.php" method="post" autocomplete="on">
 
-                    <label for="idemail">Email</label>
-                    <input type="email" name="email" id="idemail" placeholder="exemplo@exemplo.com" required><br>
-                    <label for="idsenha">Senha</label>
-                    <input type="password" name="senha" id="idsenha" minlength="8" maxlength="10" placeholder="8 digitos" required>
-                    <input type="submit" value="Logar" id="blogar"><br>
-                    <input type="button" value="Esqueci a senha" id="besq">
+                    <div class="campo">
+                        <i class="material-icons">person</i>
+                        <input type="email" name="email" id="idemail" placeholder="exemplo@exemplo.com" required autocomplete="email" maxlength="30">
+                        <label for="idemail">Email</label>
+
+                    </div>
+
+                    <div class="campo">
+                        <i class="material-icons">vpn_key</i>
+                        <input type="password" name="senha" id="idsenha" minlength="8" maxlength="8" placeholder="8 digitos" 
+                        required autocomplete="current-password">
+                        <label for="idsenha">Senha</label>
+
+                    </div>
+                    
+                    <input type="submit" value="Logar" id="blogar">
+                    <a href="esqueci.html" class="botao">Esqueci a Senha<i class="material-icons">mail</i></a>
 
                 </form>
             </div>
